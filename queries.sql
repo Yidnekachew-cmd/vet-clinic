@@ -24,6 +24,16 @@ SELECT name, species FROM animals;
 COMMIT;
 SELECT name, species FROM animals;
 
+-
+
+-- Update the owner_id values in the animals table
+UPDATE animals SET owner_id = CASE
+WHEN name = 'Agumon' THEN (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHEN (name = 'Gabumon' OR name = 'Pikachu') THEN (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHEN (name = 'Devimon' OR name = 'Plantmon') THEN (SELECT id FROM owners WHERE full_name = 'Bob')
+WHEN (name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom') THEN (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHEN (name = 'Angemon' OR name = 'Boarmon') THEN (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+END;
 
 BEGIN;
 DELETE FROM animals;
@@ -181,3 +191,6 @@ SELECT species.name, COUNT(species.name) AS species_count
 	WHERE vets.name = 'Maisy Smith'
 	GROUP BY species.name;
 	
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;
+explain analyze SELECT * FROM visits where vet_id = 2;
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';

@@ -114,13 +114,18 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤👤 **Yidnekachew Kassahun**
 
 - GitHub: [@Yidnekachew-cmd](https://github.com/Yidnekachew-cmd)
 - Twitter: [@Yidnekassahun](https://twitter.com/Yidnekassahun)
 - LinkedIn: [@yidne kassahun](https://www.linkedin.com/in/yidnekachew-kassahun-2b817a24b/)
+
+👤👤 **Yosef Geda**
+
+- GitHub: [@YosefGeda](https://github.com/Yosefgeda)
+- LinkedIn: [@yosefgeda](https://www.linkedin.com/in/yosefgeda/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

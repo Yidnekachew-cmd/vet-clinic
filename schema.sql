@@ -16,6 +16,7 @@ id BIGSERIAL NOT NULL PRIMARY KEY,
 full_name varchar(100) NOT NULL,
 age INTEGER 
 );
+
 CREATE TABLE species (
 id BIGSERIAL NOT NULL PRIMARY KEY,
 name varchar(100) NOT NULL 
@@ -45,3 +46,12 @@ CREATE TABLE visits (
     vet_id INT,
     date_of_visit DATE
 );
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+CREATE INDEX visits_animal_id_index ON visits (animal_id);
+CREATE INDEX visits_vet_id_index ON visits (vet_id);
+CREATE INDEX owners_email_index ON owners (email);
+
