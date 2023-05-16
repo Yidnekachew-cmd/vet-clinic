@@ -122,6 +122,12 @@ You can deploy this project using:
 - Twitter: [@Yidnekassahun](https://twitter.com/Yidnekassahun)
 - LinkedIn: [@yidne kassahun](https://www.linkedin.com/in/yidnekachew-kassahun-2b817a24b/)
 
+👤👤 **Yosef Geda**
+
+- GitHub: [@YosefGeda](https://github.com/Yosefgeda)
+- Twitter: [@Yosefgeda](https://twitter.com/Yosefgeda)
+- LinkedIn: [@yosefgeda](https://www.linkedin.com/in/yosefgeda/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
