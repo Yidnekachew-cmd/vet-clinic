@@ -24,6 +24,16 @@ SELECT name, species FROM animals;
 COMMIT;
 SELECT name, species FROM animals;
 
+-
+
+-- Update the owner_id values in the animals table
+UPDATE animals SET owner_id = CASE
+WHEN name = 'Agumon' THEN (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHEN (name = 'Gabumon' OR name = 'Pikachu') THEN (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHEN (name = 'Devimon' OR name = 'Plantmon') THEN (SELECT id FROM owners WHERE full_name = 'Bob')
+WHEN (name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom') THEN (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHEN (name = 'Angemon' OR name = 'Boarmon') THEN (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+END;
 
 BEGIN;
 DELETE FROM animals;
