@@ -114,7 +114,7 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤👤 **Yidnekachew Kassahun**
 
@@ -125,7 +125,6 @@ You can deploy this project using:
 👤👤 **Yosef Geda**
 
 - GitHub: [@YosefGeda](https://github.com/Yosefgeda)
-- Twitter: [@Yosefgeda](https://twitter.com/Yosefgeda)
 - LinkedIn: [@yosefgeda](https://www.linkedin.com/in/yosefgeda/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
